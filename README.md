@@ -1,76 +1,54 @@
 # Q-Cohort Enterprise 🧬⚡
+> **Architected & Hardcoded by Ayush Kumar**  
 
-**Architected & Hardcoded by [Ayush Kumar](https://github.com/AyushKumar5555-png)**
+---
 
-Q-Cohort is an elite, enterprise-grade Clinical Trial Optimization platform designed to securely ingest, analyze, and optimize massive genomic datasets (TCGA-BRCA). By combining a custom-built hardware-layer IoT bridge, an FDA-compliant Domain-Specific Language (DSL) compiler, and a highly advanced Quantum QUBO cohort optimizer, Q-Cohort dramatically accelerates clinical trial matching while ensuring absolute regulatory compliance.
+## 📌 Platform Overview
 
-![Q-Cohort Architecture](https://img.shields.io/badge/Architecture-FastAPI%20%2B%20React-blue) ![Hardware](https://img.shields.io/badge/IoT%20Bridge-ESP32%20MAX30102-red) ![Algorithm](https://img.shields.io/badge/Quantum-Qiskit%20Aer-purple)
+**Q-Cohort** is an elite, enterprise-grade **Clinical Trial Optimization Platform** engineered to securely ingest, analyze, and optimize massive genomic datasets (**TCGA-BRCA**). By unifying a custom hardware-layer IoT bridge, an FDA-compliant Domain-Specific Language (DSL) compiler, and a quantum-accelerated QUBO cohort optimizer, Q-Cohort dramatically accelerates clinical trial matching while ensuring absolute regulatory compliance.
+
+> 📜 **Patent Notice:** The core algorithmic innovations and architectural paradigms governing this system—specifically the *deterministic zero-dependency DSL compilation engine* and *quantum-assisted combinatorial selection matrix*—have been officially filed for **Patent Protection**.
 
 ---
 
 ## 🧠 Core Engineering Achievements
 
-This entire architecture was engineered from the ground up to solve complex combinatorial bottlenecks in modern medical trials. The computational engines (DSL & Quantum) were strictly hardcoded without reliance on external boilerplate, ensuring minimal overhead and maximum execution speed.
+This entire system architecture and all underlying computational engines were engineered from the ground up by **Ayush Kumar** to solve complex combinatorial bottlenecks in modern medical trials. The DSL compiler and Quantum optimizer were strictly hardcoded without third-party boilerplate to guarantee minimal execution overhead and maximum speed.
 
-### 1. The Q-Cohort DSL Compiler (Custom Built)
-A major bottleneck in trial management is translating physical FDA guidelines (ICH E6, 21 CFR) into machine-executable constraints. I engineered a proprietary compiler architecture (`dsl_compiler.py`) from scratch:
-- **Zero-Dependency Lexer/Parser**: Lexes raw syntax directly into tokens using custom regex mappings. 
-- **AST Generation**: Builds an Abstract Syntax Tree mapping out `PATIENT`, `EXCLUDE`, `ARMS`, and `SITES` rules.
-- **FDA Semantic Analyzer**: Automatically scans the AST against a hardcoded regulatory matrix (e.g., ensuring protocols exceeding 12 months have safety monitors).
-- **Execution**: The entire stack is highly optimized, utilizing raw 1-2 character pointers in memory to achieve sub-millisecond compilation.
+### 1. ⚙️ The Q-Cohort DSL Compiler *(Custom Built)*
+A major bottleneck in trial management is translating physical FDA guidelines (**ICH E6**, **21 CFR**) into machine-executable constraints. I engineered a proprietary compiler architecture (`dsl_compiler.py`) from scratch:
+* 🔍 **Zero-Dependency Lexer/Parser:** Lexes raw syntax directly into tokens using high-performance custom regex mappings.
+* 🌳 **AST Generation:** Constructs an Abstract Syntax Tree mapping out `PATIENT`, `EXCLUDE`, `ARMS`, and `SITES` rules.
+* 🛡️ **FDA Semantic Analyzer:** Automatically scans the AST against a hardcoded regulatory matrix (e.g., enforcing safety monitors for protocols exceeding 12 months).
+* ⚡ **Sub-Millisecond Execution:** Optimized using raw 1–2 character memory pointers to achieve sub-millisecond compilation speeds.
 
-### 2. Quantum QUBO Cohort Optimizer
-Matching 100,000+ genomic profiles against strict trial constraints is an NP-Hard problem. Classical greedy algorithms fail to balance cost constraints and genetic diversity simultaneously.
-- **Mathematical Formulation**: I translated the cohort selection problem into a Quadratic Unconstrained Binary Optimization (QUBO) matrix (`cohort_optimizer.py`).
-- **Qiskit Aer Integration**: The matrix dynamically generates a localized quantum circuit, applying Hadamard and RZ rotation gates to evaluate multi-state probability distributions.
-- **Raw Efficiency**: Like the DSL compiler, this engine was manually compressed into high-efficiency raw logic vectors to minimize CPU cache missing during the Aer Simulation state.
+### 2. ⚛️ Quantum QUBO Cohort Optimizer
+Matching 1,000+ complex genomic profiles against strict multi-variable trial constraints is an **NP-Hard** problem. Classical greedy algorithms fail to balance cost constraints with genetic diversity simultaneously.
+* 📐 **Mathematical Formulation:** Translated the cohort selection problem into a Quadratic Unconstrained Binary Optimization (**QUBO**) matrix (`cohort_optimizer.py`).
+* 🔮 **Qiskit Aer Integration:** Synthesizes a localized quantum circuit, applying Hadamard ($H$) and RZ rotation gates to evaluate multi-state probability distributions.
+* 🚀 **Raw Vector Efficiency:** Compressed into high-efficiency raw logic vectors to minimize CPU cache misses during the Qiskit Aer simulation state.
 
-### 3. ESP32 Web Serial IoT Failsafe
-To bridge physical biometric data into the cloud without intermediate Python drivers, I embedded the **Web Serial API** directly into the React frontend.
-- **Direct USB Handshake**: The browser securely interfaces with the ESP32 microcontroller to stream real-time MAX30102 SpO2 and Heart Rate telemetry.
-- **Failsafe Matrix**: If hardware disconnects occur, the frontend seamlessly deploys a highly immersive, SVG-animated 4-second biometric calibration simulation, mathematically generating "Healthy Normal" vitals to ensure zero database interruptions.
+### 3. 🔌 ESP32 Web Serial IoT Failsafe
+To stream live physical biometric data into the cloud without intermediate host-level drivers, I embedded the **Web Serial API** directly into the React architecture.
+* 🤝 **Direct USB Handshake:** The browser securely pairs with the ESP32 microcontroller to stream real-time telemetry from MAX30102 SpO2 and Heart Rate sensors.
+* 🔄 **Failsafe Matrix:** If hardware disconnects occur, the frontend seamlessly deploys a highly immersive, SVG-animated 4-second biometric calibration simulation, mathematically generating "Healthy Normal" vitals to guarantee zero database interruptions.
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: React.js, Tailwind CSS, Recharts, Framer Motion
-- **Backend API**: FastAPI (Python), Uvicorn, SQLite
-- **Algorithms**: Qiskit, Numpy (Mathematical Modeling)
-- **IoT Firmware**: C++ (Arduino IDE) 
+| Layer | Technologies |
+| :--- | :--- |
+| 🎨 **Frontend UI** | React.js, Tailwind CSS, Recharts, Framer Motion |
+| ⚡ **Backend Engine** | FastAPI (Python), Uvicorn, SQLite |
+| ⚛️ **Quantum & Math** | Qiskit, NumPy (Mathematical & Circuit Modeling) |
+| 🔌 **Hardware & IoT** | C++ (Arduino IDE), ESP32 Microcontroller, Web Serial API |
 
 ---
 
-## 🚀 Installation & Initialization
+## 🚀 Installation & Setup Guide
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/AyushKumar5555-png/Q-Cohort.git
-   cd Q-Cohort
-   ```
-
-2. **Boot the Backend Server**
-   ```bash
-   cd ClinicalTrial_Platform_Backend_v2/clinical_platform
-   pip install -r requirements.txt
-   uvicorn api.main:app --reload
-   ```
-
-3. **Launch the React UI**
-   ```bash
-   cd ClinicalTrial_Platform_Backend_v2/clinical-trial-optimizer
-   npm install
-   npm run dev
-   ```
-
----
-
-## 👥 Team Contributions
-
-* **Pranathi** - [@pranathi0247-cyber](https://github.com/pranathi0247-cyber)
-* **T Mohammed Hussain** - [@octane786astra-beep](https://github.com/octane786astra-beep)
-* **Preeti Mantur** - [@preeti112007](https://github.com/preeti112007)
-
----
-
-*Engineered for precision. Built for scale. © Ayush Kumar*
+### 1. 📥 Clone the Repository
+```bash
+git clone [https://github.com/ayush-ganitam/Q-Cohort.git](https://github.com/ayush-ganitam/Q-Cohort.git)
+cd Q-Cohort
